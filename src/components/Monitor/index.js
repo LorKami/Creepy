@@ -2,9 +2,7 @@ import React, { useState } from "react";
 import "../Monitor/Monitor.css";
 
 import Pop1 from "../../images/pop1.gif";
-import Discord from "../../images/discord.png"
-import Twitter from "../../images/twitter.png"
-import SUI from "../../images/sui.png"
+
 
 import { BsDiscord } from 'react-icons/bs';
 import { SiTwitter } from 'react-icons/si';
@@ -69,22 +67,19 @@ const Monitor = () => {
 
           <div className="MenuIndex">
             <p onClick={() => setTextID(textID === "CreepyP" ? null : "CreepyP")}>CREEPY POPS</p>
-            {/* <p onClick={() => setTextID(textID === "AboutP" ? null : "AboutP")}>ABOUT</p> */}
-            {/* <p onClick={() => setTextID(textID === "RoadmapP" ? null : "RoadmapP")}>ROADMAP</p> */}
-            <a><p className="TextLocked">RAFFLE</p></a>
-            {/* <a href="https://creepy-pops.vercel.app/" target="_blank"><p>MINT PAGE</p></a> */}
+            <a href="https://creepy-pops.vercel.app/" target="_blank"><p>MINT PAGE</p></a>
+            <a className="LinkBlocked"><p className="LinkBlocked">RAFFLE</p></a>
             </div>
 
             <div className="ImageSocial">
               <div className="ImageUp">
-              {/* <a href="https://discord.com/" target="_blank"><img src={Discord}></img></a> */}
+
               <a href="#" target="_blank"><BsDiscord className="ButtonDiscord" size='2rem'/></a>
               <a href="https://twitter.com/creepypopsnft" target="_blank"><SiTwitter className="ButtonTwitter" size='2rem'/></a>
-              {/* <a href="https://twitter.com/creepypopsnft" target="_blank"><img src={Twitter}></img></a> */}
+
               </div>
               <div className="ImageDown">
-              {/* <a href="#" target="_blank"><img src={SUI}></img></a> */}
-              {/* <a href="#" target="_blank"><img src={BlueMove}></img></a> */}
+
               </div>
             </div>
 

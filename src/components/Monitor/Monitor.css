@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 /* font-family: 'Creepster', cursive; */
 
+a {
+  text-decoration: none;
+}
+
 .Monitor {
   display: flex;
   flex-direction: row;
@@ -115,16 +119,13 @@
   transform: scale(1.2) skew(0deg, 0deg);
 }
 
-.MenuIndex a {
-  text-decoration: none;
-  cursor: not-allowed;
+.LinkBlocked {
+  cursor: not-allowed !important;
 }
 
-.MenuIndex a p:hover {
-  cursor: not-allowed;
-  color: rgb(99, 99, 99);
+.LinkBlocked:hover {
+  color: rgb(82, 82, 82) !important;
 }
-
 
 .ButtonDiscord,
 .ButtonTwitter {
