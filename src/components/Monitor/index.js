@@ -25,7 +25,7 @@ const Monitor = () => {
             textID === 'CreepyP' ? (<div className="SectionTeam-Open">
               <h2>CREEPY</h2>
               <p>
-              Coming soon, we're working like creepy
+              Coming soon, we're working like creepy. Maybe today, maybe tomorrow, maybe next week, who knows.
               </p>
             </div>) : (<div></div>)  
           }
