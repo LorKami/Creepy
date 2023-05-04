@@ -78,7 +78,7 @@ const Monitor = () => {
             <div className="ImageSocial">
               <div className="ImageUp">
               {/* <a href="https://discord.com/" target="_blank"><img src={Discord}></img></a> */}
-              <a href="https://discord.com/" target="_blank"><BsDiscord className="ButtonDiscord" size='2rem'/></a>
+              <a href="#" target="_blank"><BsDiscord className="ButtonDiscord" size='2rem'/></a>
               <a href="https://twitter.com/creepypopsnft" target="_blank"><SiTwitter className="ButtonTwitter" size='2rem'/></a>
               {/* <a href="https://twitter.com/creepypopsnft" target="_blank"><img src={Twitter}></img></a> */}
               </div>
