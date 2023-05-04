@@ -1,0 +1,326 @@
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
+/* font-family: 'Creepster', cursive; */
+
+.Monitor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../../images/Background.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: -1px 1px 58px 36px rgba(0, 0, 0, 0.75) inset;
+  -webkit-box-shadow: -1px 1px 58px 36px rgba(0, 0, 0, 0.75) inset;
+  -moz-box-shadow: -1px 1px 58px 36px rgba(0, 0, 0, 0.75) inset;
+  /* background-color: rgb(102, 27, 27); */
+}
+
+.PrincipalImage {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  /* border: 2px solid blue; */
+}
+
+.InfoLeft {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 100%;
+  /* border: 2px solid rgb(123, 255, 0); */
+}
+
+.InfoSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  /* border: 2px solid rgb(123, 255, 0); */
+}
+
+.SectionCreepy-Open,
+.SectionTeam-Open,
+.SectionRoadmap-Open {
+  width: 100%;
+  padding: 30px;
+  height: 500px;
+  overflow-y: scroll;
+  scroll-snap-type: mandatory;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+}
+
+.SectionCreepy-Closed,
+.SectionTeam-Closed,
+.SectionRoadmap-Closed,
+.SectionSocials-Closed {
+  display: none;
+}
+
+.SectionCreepy-Open h2,
+.SectionTeam-Open h2 {
+  font-size: 40px;
+  color: rgb(128, 0, 0);
+  text-shadow: 0 0 10px white;
+  font-family: "Creepster", cursive;
+}
+
+.SectionCreepy-Open p,
+.SectionTeam-Open p {
+  font-size: 30px;
+  color: white;
+  font-weight: 800;
+  text-shadow: 0 0 10px rgb(175, 0, 0);
+  filter: blur(7px);
+}
+
+.MenuSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30%;
+  height: 900px;
+  /* border: 2px solid rgb(0, 26, 255); */
+}
+
+.MenuIndex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* border: 2px solid rgb(255, 60, 0); */
+}
+
+.MenuIndex p {
+  color: white;
+  font-size: 30px;
+  font-family: "Creepster", cursive;
+  transform: scale(1.2) skew(0deg, 6deg);
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.MenuIndex p:hover {
+  letter-spacing: 1px;
+  color: rgb(128, 0, 0);
+  transform: scale(1.2) skew(0deg, 0deg);
+}
+
+.MenuIndex a {
+  text-decoration: none;
+  cursor: not-allowed;
+}
+
+.MenuIndex a p:hover {
+  cursor: not-allowed;
+  color: rgb(99, 99, 99);
+}
+
+
+.ButtonDiscord,
+.ButtonTwitter {
+  color: white;
+  transition: 0.3s;
+}
+
+.ButtonTwitter:hover {
+  color: #1DA1F2 ;
+}
+
+.ButtonDiscord:hover {
+  color: #7289da ;
+}
+
+.ImageSocial {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  height: 20%;
+  /* border: solid rgb(30, 255, 0) 2px; */
+}
+
+.ImageUp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 45%;
+  padding-bottom: 10px;
+  /* border: solid rgb(255, 0, 0) 2px; */
+}
+
+.ImageDown {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  /* border: solid rgb(255, 123, 0) 2px; */
+}
+
+.ImageUp a,
+.ImageDown a {
+  transition: 0.3s;
+}
+
+.ImageUp a:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.ImageDown a:hover {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.ImageUp img,
+.ImageDown img {
+  display: flex;
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (max-width: 1440px) {
+    .MenuSection {
+        width: 30%;
+        height: 700px;
+        /* border: 2px solid rgb(255, 0, 200);  */
+      }
+
+      .PrincipalImage {
+        width: 50%;
+        display: flex;
+        justify-content: left;
+        align-items: flex-end;
+      }
+
+      .PrincipalImage img {
+        display: flex;
+        width: 500px;
+        height: 500px;
+      }
+}
+
+@media screen and (max-width: 1024px) {
+    .MenuSection {
+        width: 30%;
+        height: 700px;
+        /* border: 2px solid rgb(255, 0, 200);  */
+      }
+      .InfoSection {
+        background-image: url(../../images/pop1.gif);
+        background-size: 100%;
+        background-position: left bottom;
+        background-repeat: no-repeat;
+      }
+    
+      .PrincipalImage {
+        display: none;
+        /* border: 2px solid blue; */
+      }
+}
+
+@media screen and (max-width: 768px) {
+  .Monitor {
+    /* border: 2px solid blue; */
+  }
+
+  .PrincipalImage {
+    /* border: 2px solid rgb(255, 8, 0); */
+  }
+
+  .InfoLeft {
+    height: 100%;
+    /* border: 2px solid rgb(0, 255, 34); */
+  }
+
+  .MenuSection {
+    width: 40%;
+    /* border: 2px solid rgb(255, 0, 200); */
+  }
+
+  .PrincipalImage img {
+    display: flex;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .InfoSection {
+    background-size: 90%;
+  }
+  .MenuIndex p {
+    font-size: 20px;
+  }
+  .MenuSection {
+    height: 83%;
+    width: 43%;
+    /* border: 2px solid rgb(0, 255, 34); */
+  }
+
+  .ImageDown,
+  .ImageUp {
+    width: 100%;
+    /* border: solid rgb(255, 123, 0) 2px; */
+  }
+
+  .SectionCreepy-Open h2,
+  .SectionTeam-Open h2 {
+    font-size: 30px;
+  }
+
+  .SectionCreepy-Open p,
+  .SectionTeam-Open p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .ImageUp img,
+  .ImageDown img {
+    display: flex;
+    width: 45px;
+    height: 45px;
+  }
+
+  .MenuSection {
+    width: 50%;
+}
+
+  .MenuIndex p {
+    font-size: 16px;
+  }
+
+  .SectionCreepy-Open h2,
+  .SectionTeam-Open h2 {
+      font-size: 25px;
+  }
+
+  .SectionCreepy-Open p,
+  .SectionTeam-Open p {
+      font-size: 15px;
+  }
+
+}
+
+@media screen and (max-width: 320px) {
+    .ImageUp img,
+    .ImageDown img {
+      display: flex;
+      width: 40px;
+      height: 40px;
+    }
+    .MenuSection {
+        width: 55%;
+    }
+}
